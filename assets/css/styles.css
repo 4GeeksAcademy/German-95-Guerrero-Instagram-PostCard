@@ -1,0 +1,129 @@
+:root {
+    /*Primary*/
+     --white: #FFF;
+     --black: #111111;
+    
+ 
+ 
+     /*Utilities*/
+     --padding:0.5rem 1.5rem;
+    --paddingText: 1rem 1.5rem;
+     /*Typography*/
+     --typography:'Roboto', sans-serif;
+ }
+ 
+ 
+ /*Global*/
+ 
+ html {
+     font-size: 62.5%;   
+     box-sizing: border-box;
+ }
+ *, *:before, *:after {
+     box-sizing: inherit;
+     margin: 0;
+ }
+ 
+ body {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     font-size: 1.6rem;
+     height: 100vh;
+     background-color: var(--black);
+     font-family: var(--typography);
+     
+ }
+ 
+ img {
+     max-width: 100%;
+     display: block;
+ }
+ 
+ i{
+     cursor: pointer;
+ }
+ 
+ i:hover{
+     color: red;
+     
+ }
+ 
+ span{
+     font-weight: bold;
+ }
+ 
+ 
+ /*Post*/
+ .post{
+     height: 50rem;
+     width: 40rem;
+     border: 0.1rem solid var(--black);
+     background-color: var(--white);   
+ }
+ 
+ 
+ /*Header*/
+ .post-header{
+    
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 4.5rem;
+     padding: var(--padding)
+ }
+ 
+ .logo{
+    position: relative;
+    right: 14.5rem;
+    font-size: 1rem;
+ }
+ 
+ .text-html5{
+     font-weight: bold;
+ }
+ 
+ 
+ /*Img*/
+ 
+ .post-img{
+   background-image: url(/assets/img/toyota.jpg);
+   background-size: cover;
+   background-position: center center;
+   height: 50% ;
+   margin-bottom: 0.1rem;
+ }
+ 
+ 
+ /*Icons*/
+ 
+ .post-icons{
+     display: flex;
+     justify-content: space-between;
+     padding: var(--paddingText)
+   
+ }
+
+.bookmark{
+    padding-top: 0.2rem;
+}
+ 
+ /*Body*/
+ 
+ 
+ .post-body{
+     display: flex;
+     flex-direction: column;
+     gap: 0.4rem;
+     padding: var(--paddingText)
+ }
+ 
+ .post-body>p{
+     text-align: justify;
+    
+ }
+ 
+ 
+   
+ 
